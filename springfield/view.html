@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../simpson.css">
+  <title>Simpsonit sivu</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../logo.svg" alt="logo" height="42px"><h1>The simpsons</h1></a>
+  </header>
+  <nav>
+    <a href=".">Springfield</a>|
+    <a href="characters">Characters</a>|
+    <a href="forum.html">Forum</a>
+  </nav>
+  <hr>
+  <a id="back">&ltback</a>
+  <br>
+  <img id="img" style="width:100%">
+</body>
+  <script>
+    const eback = document.getElementById('back');
+    const img = document.getElementById('img');
+
+    const paramsString = window.location.search;
+    const searchParams = new URLSearchParams(paramsString);
+
+    eback.href = searchParams.get('b');
+    img.src = searchParams.get('i');
+  </script>
+</html>
