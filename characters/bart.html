@@ -29,9 +29,21 @@
         <audio controls><source src="bart1.wav" type="audio/wav"></audio>
         <audio controls><source src="bart2.wav" type="audio/wav"></audio>
         <audio controls><source src="bart3.wav" type="audio/wav"></audio>
+        <br>
+        <img src="vabart.png" alt="bart voice actor" width="32" width="height"> Nancy Cartwright
       </section>
       <section hidden class="tab" id="memes">
-        <p>meow</p>
+        <div hidden id="memeviewer">
+          <button onclick="memelist()">Back</button>
+          <br>
+          <img id="viewimg">
+        </div>
+        <div id="memelist" style="display: grid; grid-template-columns: auto auto auto">
+          <img width="128" height="128" role="button" onclick="openMeme(event)" src="bartmeme1.jpg">
+          <img width="128" height="128" role="button" onclick="openMeme(event)" src="bartmeme2.png">
+          <img width="128" height="128" role="button" onclick="openMeme(event)" src="bartmeme3.jpg">
+          <img width="128" height="128" role="button" onclick="openMeme(event)" src="bartmeme4.png">
+        </div>
       </section>
     </main>
   </div>
