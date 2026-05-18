@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../simpson.css">
+  <title>Simpsonit sivu</title>
+<style>article a img {height:100%} article a{display:flex} a {width:100%;height:100%}</style>
+<script src="tabs.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../logo.svg" alt="logo" height="42px"><h1>The simpsons</h1></a>
+  </header>
+  <nav>
+    <a href="../springfield">Springfield</a>|
+    <a href="../characters">Characters</a>|
+    <a href="../forum.html">Forum</a>
+  </nav>
+  <hr>
+  <div style="display:flex">
+    <img src="marge.webp" alt="marge" width="300">
+    <main>
+      <button class="tabbtn active" onclick="openTab(event, 'info')">Info</button>
+      <button class="tabbtn" onclick="openTab(event, 'memes')">Memes</button>
+      <section class="tab" id="info">
+        <h2>Marjorie "Marge" Bouvier Simpson</h2>
+        <p>Marjorie "Marge" Bouvier Simpson (née Bouvier) is a fictional character and one of the main protagonists in the American animated sitcom The Simpsons and part of the eponymous family. Voiced by Julie Kavner, she first appeared on television in The Tracey Ullman Show short "Good Night" on April 19, 1987. Marge was created and designed by cartoonist Matt Groening while he was waiting in the lobby of James L. Brooks' office. Groening had been called to pitch a series of shorts based on Life in Hell but instead decided to create a new set of characters. He based the character on his mother Margaret Groening. After appearing on The Tracey Ullman Show for three seasons, the Simpson family received their own series on Fox, which debuted December 17, 1989.</p>
+        <audio controls><source src="marge1.wav" type="audio/wav"></audio>
+        <audio controls><source src="marge2.wav" type="audio/wav"></audio>
+        <audio controls><source src="marge3.wav" type="audio/wav"></audio>
+        <br>
+        <img src="vamarge.JPG" alt="marge voice actor" width="32" width="height"> Julie Kavner
+      </section>
+      <section hidden class="tab" id="memes">
+        <div hidden id="memeviewer">
+          <button onclick="memelist()">Back</button>
+          <br>
+          <img id="viewimg">
+        </div>
+        <div id="memelist" style="display: grid; grid-template-columns: auto auto auto">
+          <img width="128" height="128" role="button" onclick="openMeme(event)" src="margememe1.webp">
+          <img width="128" height="128" role="button" onclick="openMeme(event)" src="margememe1.webp">
+          <img width="128" height="128" role="button" onclick="openMeme(event)" src="margememe1.webp">
+          <img width="128" height="128" role="button" onclick="openMeme(event)" src="margememe1.webp">
+          <img width="128" height="128" role="button" onclick="openMeme(event)" src="margememe1.webp">
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
