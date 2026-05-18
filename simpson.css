@@ -33,6 +33,26 @@ article {
   border-radius: 4px;
 }
 
+section {
+  background-color: #E44423;
+  padding: 3rem;
+  height: fit-content;
+}
+
 a {
   color: #1769B6;
+}
+
+.tabbtn {
+  border-radius: 0px;
+  background-color: #642413;
+  border: none;
+  margin: none;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.tabbtn.active {
+  background-color: #E44423;
+  cursor: auto;
 }

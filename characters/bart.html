@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../simpson.css">
+  <title>Simpsonit sivu</title>
+<style>article a img {height:100%} article a{display:flex} a {width:100%;height:100%}</style>
+<script src="tabs.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../logo.svg" alt="logo" height="42px"><h1>The simpsons</h1></a>
+  </header>
+  <nav>
+    <a href=".">Springfield</a>|
+    <a href="characters">Characters</a>|
+    <a href="forum.html">Forum</a>
+  </nav>
+  <hr>
+  <div style="display:flex">
+    <img src="bart.png" alt="bart">
+    <main>
+      <button class="tabbtn active" onclick="openTab(event, 'info')">Info</button>
+      <button class="tabbtn" onclick="openTab(event, 'memes')">Memes</button>
+      <section class="tab" id="info">
+        <h2>Barthomolew Jo-Jo "Bart" Simpson</h2>
+        <p>Bartholomew Jo-Jo "Bart" Simpson is a fictional character and one of the main characters in the American animated television series The Simpsons who is part of the titular family. Widely regarded as one of the greatest fictional characters of all time, he was named by Time as one of the most important people of the 20th century. </p>
+        <audio controls><source src="bart1.wav" type="audio/wav"></audio>
+        <audio controls><source src="bart2.wav" type="audio/wav"></audio>
+        <audio controls><source src="bart3.wav" type="audio/wav"></audio>
+      </section>
+      <section hidden class="tab" id="memes">
+        <p>meow</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
