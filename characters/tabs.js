@@ -23,6 +23,6 @@ function openMeme(e) {
 }
 
 function memelist() {
-  mlist.style.display = "block";
+  mlist.style.display = "grid";
   mview.style.display = "none";
 }
