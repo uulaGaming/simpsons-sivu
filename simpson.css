@@ -86,3 +86,11 @@ a {
   background-color: #E44423;
   cursor: auto;
 }
+
+aside {
+  text-align: center;
+  background-color: #CDDF8D;
+  border: 2px solid #000;
+  width: 1200px;
+  height: fit-content;
+}
