@@ -59,12 +59,14 @@ article {
   padding: 4px;
   border-radius: 4px;
   border: 2px solid #642413;
+  color: white;
 }
 
 section {
   background-color: #E44423;
   padding: 3rem;
   height: fit-content;
+  color: white;
 }
 
 a {
