@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="simpson.css">
+  <title>Simpsonit sivu</title>
+  <script src="forum.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="logo.svg" alt="logo" height="42px"><h1>The simpsons</h1></a>
+  </header>
+  <nav>
+    <a href="springfield">Springfield</a>|
+    <a href="characters">Characters</a>|
+    <a href="forum.html">Forum</a>
+  </nav>
+  <section>
+    <h1>Simpsons forum</h1>
+    <button command="show-modal" commandfor="newmsg">Create message</button>
+  </section>
+  <main id="msgs"></main>
+  <dialog id="newmsg">
+    <form>
+      <label for="uname">Username: </label>
+      <input type="text" name="uname" id="uname"> <br>
+      <label for="title">Post title: </label>
+      <input type="text" name="title" id="title"> <br>
+      <label for="content">Post content: </label>
+      <textarea rows="4" cols="32" name="content" id="content"></textarea>
+      <br>
+      <button type="submit" onclick="addMsg(event)">Send</button>
+    </form>
+    <button command="close" commandfor="newmsg">Cancel</button>
+  </dialog>
+</body>
+</html>
