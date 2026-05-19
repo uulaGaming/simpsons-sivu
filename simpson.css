@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'main';
+  src: url('FinlandicaText.ttf');
+}
+
 body {
   background-color: #FCCB00;
+  font-family: main;
 }
 
 header a {
@@ -7,14 +13,35 @@ header a {
   flex-direction: row;
   align-items: center;
   text-decoration: none;
+  color: white;
 }
 
 header {
-  border-bottom: 2px solid #000;
+  border: 2px solid #000;
+  background-color: #1769B6;
+  padding: 6px;
+}
+
+nav {
+  display: flex;
+  line-height: 40px;
+  background-color: black;
 }
 
 nav a {
+  font-weight: bold;
   text-decoration: none;
+  display: block;
+  width: fit-content;
+  height: 40px;
+  color: #5C9ED9;
+  background-color: #E44423;
+  vertical-align: middle;
+  border: 2px solid #642413;
+}
+
+nav a:hover {
+  background-color: #642413;
 }
 
 #banner {
